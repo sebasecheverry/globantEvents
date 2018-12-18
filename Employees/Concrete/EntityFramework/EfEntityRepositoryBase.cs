@@ -10,7 +10,7 @@ namespace DataAccess.Concrete.EntityFramework
 {
     public class EfEntityRepositoryBase<TEntity, TContext> : IEntityRepository<TEntity> 
         where TEntity : class, new()
-        where TContext: DbContext,new()
+        where TContext: DbContext,new()     
     {
         public void Add(TEntity entity)
         {
